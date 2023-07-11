@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dibuja</title>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Dibuja</h1>
+        <h6><kbd>Click derecho para borrar</kbd></h6>
+        <button data-toggle="modal" data-target="#modal">Referencias</button>
+        <button onclick="guardarimg()">Guardar imagen</button>
+        <input type="text" placeholder="Nombra tu dibujo!" id="nombre">
+        <br><br>
+        <kbd id="Re">Dibuja y intare adivinar lo que diujas</kbd>
+        <div class="modal fade" id="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Dibuja</h4>
+                    <button class="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <img src="sketch1.png">
+                    <img src="sketch2.png">
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
